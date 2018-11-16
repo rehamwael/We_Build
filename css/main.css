@@ -243,13 +243,13 @@ html {
 }
 
 ::-moz-selection {
-  background: #ff7a7a;
+  background: #cfc704;
   text-shadow: none;
   color: #fff;
 }
 
 ::selection {
-  background: #ff7a7a;
+  background: #cfc704;
   text-shadow: none;
    color: #fff;
 }
@@ -346,14 +346,14 @@ p ,a{
 
 /* =Preloader */
 nav.navbar.navbar-expand-md.navbar-dark.fixed-top.bg-dark.fixed-header{
-  background-color: #2a2457 !important;
+  background-color: #151515 !important;
 }
 #preloader {
   position: absolute;
   width: 100%;
   height: 100%;
   z-index: 999999;
-  background-color: #282256;
+  background-color: #212121;
   color: #ffffff;
 }
 
@@ -445,17 +445,17 @@ nav.navbar.navbar-expand-md.navbar-dark.fixed-top.bg-dark.fixed-header{
 }
 
 .header-container .bcg {
-  background-image: url(../images/Slice.png);
+  background-image: url(../images/home-bg.png);
   background-size: cover;
 }
 
 #slide01 .bcg {
-  background-image: url(../images/reham-bg-2.png);
+  background-image: url(../images/reham-bg.png);
   background-size: cover;
 }
 
 #slide02 .bcg {
-  background-image: url(../images/ismael-bg.png);
+  background-image: url(../images/ismael-bg-2.png);
   background-size: cover;
 }
 
@@ -550,7 +550,7 @@ nav.navbar.navbar-expand-md.navbar-dark.fixed-top.bg-dark {
   visibility: visible;
 }
 #nav-dots a:hover .nav-dot{
-  background-color: #dc6060;
+  background-color: #cfc704;
 }
 
 #nav-dots .nav-dot {
@@ -696,8 +696,8 @@ p {
 /* =Content Block */
 
 .content-block {
-    background-color: #e1dce6;
-    color: #dc6060;
+    background-color: #dad9c9;
+    color: #000000;
 }
 
 .content-block .wrapper {
@@ -728,7 +728,7 @@ ul{
   margin-bottom:1.3em;
 }
 .diff-color{
-  color: #dc6060;
+      color: #cfc704;
   font-weight: bold;
 }
 .posts .first-post-item img{
@@ -795,14 +795,14 @@ ul{
     transition: all 0.4s ease-out;
   }
 .overlay{
-  position: absolute;
-    background: #040021;
+    position: absolute;
+    background: #000000;
     width: 100%;
     height: 100%;
     top: 0;
     left: 0;
     opacity: 0.7;
-    border: 1px solid #46425f;
+    border: 1px solid #272720;
 }
 .other-posts .image-conetnt{
   padding: 1em;
@@ -820,9 +820,9 @@ ul{
 
 .footer-container {
   font-size: 17px;
-  color: #2a2457;
+  color: #2b2827;
   font-weight: bold;
-  background-color: #eee;
+  background-color: #fff;
   font-family: 'Dosis', sans-serif;
 }
 #slide03{
@@ -888,7 +888,7 @@ ul{
 
 .wrapper section a{
   font-size: 20px;
-  color: #dc6060;
+     color: #cfc704;
   font-weight: bold;
 }
 /* ==========================================================================
