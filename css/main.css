@@ -346,7 +346,8 @@ p ,a{
 
 /* =Preloader */
 nav.navbar.navbar-expand-md.navbar-dark.fixed-top.bg-dark.fixed-header{
-  background-color: #151515 !important;
+  background-color: #fff963 !important;
+  height: 65px;
 }
 #preloader {
   position: absolute;
@@ -375,10 +376,11 @@ nav.navbar.navbar-expand-md.navbar-dark.fixed-top.bg-dark.fixed-header{
   text-align: center;
 }
 .navbar-dark .navbar-nav .nav-link {
-    color: #fff;
+    color: #000 !important;
+    background: none;
 }
-.navbar-dark .navbar-nav .nav-link:active {
-  color: #dc6060;
+.navbar-dark .navbar-nav .nav-link:hover , .navbar-dark .navbar-nav .nav-link:active{
+  color: #aba404 !important;
 }
 #preloader .progress {
   width: 100px;
@@ -426,6 +428,7 @@ nav.navbar.navbar-expand-md.navbar-dark.fixed-top.bg-dark.fixed-header{
   -webkit-transform-origin: top center;
   -ms-transform-origin: top center;
   transform-origin: top center;
+  
 }
 
 .header-container.is-loaded .bcg {
@@ -445,8 +448,15 @@ nav.navbar.navbar-expand-md.navbar-dark.fixed-top.bg-dark.fixed-header{
 }
 
 .header-container .bcg {
-  background-image: url(../images/home-bg.png);
+  background-image: url(../images/home-bg);
   background-size: cover;
+  background-color: #ffff61;
+  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#fff963+2,ffff61+51,ffff61+58,ffff8e+100 */
+background-color: #fff963; /* Old browsers */
+background-color: -moz-linear-gradient(top, #fff963 2%, #ffff61 51%, #ffff61 58%, #ffff8e 100%); /* FF3.6-15 */
+background-color: -webkit-linear-gradient(top, #fff963 2%,#ffff61 51%,#ffff61 58%,#ffff8e 100%); /* Chrome10-25,Safari5.1-6 */
+background-color: linear-gradient(to bottom, #fff963 2%,#ffff61 51%,#ffff61 58%,#ffff8e 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fff963', endColorstr='#ffff8e',GradientType=0 ); /* IE6-9 */
 }
 
 #slide01 .bcg {
@@ -550,7 +560,7 @@ nav.navbar.navbar-expand-md.navbar-dark.fixed-top.bg-dark {
   visibility: visible;
 }
 #nav-dots a:hover .nav-dot{
-  background-color: #cfc704;
+  background-color: #fff963;
 }
 
 #nav-dots .nav-dot {
@@ -589,11 +599,12 @@ nav.navbar.navbar-expand-md.navbar-dark.fixed-top.bg-dark {
 }
 
 #nav-dots.is-light a {
-  color: #ffffff;
+  color: #000;
 }
 
 #nav-dots.is-light .nav-dot {
-  background-color: rgba(255, 255, 255, 0.5);
+  background-color: #fff;
+  border: 1px solid #fff963;
 }
 
 #nav-dots ul {
@@ -696,7 +707,7 @@ p {
 /* =Content Block */
 
 .content-block {
-    background-color: #dad9c9;
+    background-color: #fff;
     color: #000000;
 }
 
@@ -728,7 +739,7 @@ ul{
   margin-bottom:1.3em;
 }
 .diff-color{
-      color: #cfc704;
+      color: #fff963;
   font-weight: bold;
 }
 .posts .first-post-item img{
@@ -888,7 +899,7 @@ ul{
 
 .wrapper section a{
   font-size: 20px;
-     color: #cfc704;
+     color: #ffff61;
   font-weight: bold;
 }
 /* ==========================================================================
@@ -903,8 +914,8 @@ ul{
     font-size: 3em;
   }
   p {
-    font-size: 21px;
-    line-height: 29px;
+    font-size: 19px;
+    line-height: 27px;
     margin-bottom: 1.4em;
   }
   a {
@@ -924,6 +935,7 @@ ul{
     transform: translate(-50%, -50%);
     margin: 0;
     padding: 0;
+    color: #000;
   }
   .header-container:before {
     font-size: 70em;
