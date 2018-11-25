@@ -402,6 +402,7 @@ text-align: left;
     position: absolute;
     top: -17px;
     left: 0;
+    clip: rect(0rem, 48rem, 12rem, 0px);
     transition: all 0.3s ease-in;
 }
 .slider-content .title-wrapper h1 span.mask-wrap:last-child span.mask {
@@ -757,7 +758,7 @@ a , a:hover{
 .slider-container .slide-content .txt-wrapper .post-wrapper .post-info {
   display: block;
   color: #AEACAB;
-  font-size: 1rem;
+  font-size: 1.15rem;
 }
 .slider-container .slide-content .txt-wrapper .post-wrapper .post-info:after {
   content: "";
@@ -881,5 +882,5 @@ a , a:hover{
   }
   .slider-content .slide.grey {
     background-color: #333232;
-}
+  }
 }
