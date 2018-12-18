@@ -954,6 +954,18 @@ a , a:hover{
   font-weight: bold;
   margin-bottom: 1em;
 }
+
+@media (min-width: 1500px){
+  .slider-content .title-wrapper{
+    margin-top: 30em;
+  }
+  .blog-posts img {
+    height: 40vh;
+  }
+  .project-bg{
+    height: 30vh;
+  }
+}
 @media (min-width: 481px) and (max-width: 1024px) {
   
   .slider-content .fake-bg.red ,.slider-content .fake-bg.blue ,.slider-content .fake-bg.green {
