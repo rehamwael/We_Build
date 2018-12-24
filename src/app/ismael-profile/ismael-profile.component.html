@@ -1,0 +1,116 @@
+<mat-card>
+  <div class="inner">
+    <div class="slider-content">
+        <div class="header-wrapper">
+          <div class="header">
+            <div class="menu-wrapper">
+              <div class="menu-hamburger" (click)="menuToggle()"></div>
+              <a href="/"><div class="logo">WE BUILD</div></a>
+            </div>
+            <div class="nav-wrapper">
+              <nav>
+                <ul>
+                  <li><a href="/">Home</a></li>
+                  <li><a href="/reham">Reham Profile</a></li>
+                  <li><a href="/ismael" class="active">Ismael Profile</a></li>
+                  <li><a href="/blog">Blog</a></li>
+                </ul>
+              </nav>
+            </div>
+          </div>
+        </div>
+      <div class="slider-wrapper">
+        <div class="slider-container">
+         <div class="lines-wrapper">
+           <div class="croses">
+             <span>+</span>
+             <span>+</span>
+             <span>+</span>
+             <span>+</span>
+           </div>
+           <span class="vertical"></span>
+           <span class="horizontal"></span>
+           <span class="horizontal"></span>
+           <span class="horizontal"></span>
+           <span class="horizontal"></span>
+          </div>
+          <div class="image-mask">
+            <img class="" src="" alt="" />
+          </div>
+         <div class="slide active green" data-order="1" data-color="#f96666" data-img="">
+            <div class="fake-bg green"></div>
+            <canvas class="canvas" data-image=""></canvas>
+            <div class="slide-content ">
+              <div class="image-caption right">
+                 <span class="line"></span>
+                  <span>Project Managemnet</span>
+                </div>
+              <div class="title-background">
+                  <span class="mask-wrap">
+                    <span class="mask">Ismael</span>
+                  </span>
+                  <span class="mask-wrap">
+                    <span class="mask">Akhras</span>
+                  </span>
+              </div>
+              <div class="title-wrapper">
+                <h1>
+                    <span class="mask-wrap my-mask-wrap">
+                        <span class="mask my-mask">Ismael</span>
+                      </span>
+                      <span class="mask-wrap my-mask-wrap">
+                        <span class="mask my-mask">Al-Akhras</span>
+                      </span>
+                   <span class="mask-wrap content-paragraph"> <span class="mask">{{page?.profile_description}}</span></span>
+                   <span class="mask-wrap content-paragraph"><a (click)="scrollTo()" class="button view-more-link" title="View portfolio items">View Projects <i class="fa fa-angle-down ml-4"></i></a></span>
+                </h1>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="projects" *ngIf="projects">
+      <div class="container-fluid mb-5">
+        <div class="row mt-4">
+          <h1 class="col-md-12 title-main mb-5">Ismael Projects</h1>
+          <div class="col-md-4 mb-5  hide-on-init" *ngFor="let project of projects" animateOnScroll animationName="animated zoomIn animated-delay">
+              <a href="{{project?.project_url}}" target="_blank">
+                <div class="project-bg" [ngStyle]="{'background-image':'url(' + project?.project_placeholder + ')'}">
+                  <div class="overlay-text text-center p-3 hide-on-init" animateOnScroll animationName="animated slideDown" animation-duration="1.3s" animation-delay="1s">
+                    <h2>{{project?.project_name}}</h2>
+                    <p>{{project?.project_description}}</p>
+                  </div>
+                </div>
+              </a>
+            </div>
+        </div>
+      </div>
+    </div>
+    <div id="Blog" *ngIf="posts">
+      <div class="container-fluid mb-5">
+        <div class="row mt-4 blog-posts">
+          <h1 class="col-md-12 title-main mb-5">Ismael Blog Posts.</h1>
+          <div class="col-md-4 hide-on-init" *ngFor="let post of posts" animateOnScroll animationName="animated slideUp" animation-duration="1s" animation-delay="1s">
+              <a [routerLink]="['/blog/'+post.slug]">
+                <div class="content_div">
+                  <img *ngIf="post.featured_image" src="{{post.featured_image}}" alt="featured image"
+                  class="responsive"/>
+              <div class="image-conetnt">
+              <div class="blog-info hide-on-init" animateOnScroll animationName="animated slideUp" animation-duration="1.4s" animation-delay="1s">
+                  <h2 class="slideInUp"> {{post.title}}</h2>
+                  <div class="more-info">In <span class="diff-color">{{ post.categories[0]?.name }}</span> By <span class="diff-color">{{ post.author?.first_name }}</span> {{post.published | date: 'dd/MM/yyyy' }}</div>
+                  <p class="slideInUp slideInUp2" [innerHTML]="post.summary"></p>
+                  <div class="read-more">
+                   <h5>Read More →</h5>
+                  </div>
+              </div>
+            </div>
+          </div>
+        </a>
+        </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</mat-card>

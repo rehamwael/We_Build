@@ -1,0 +1,74 @@
+<mat-card>
+<div class="inner inner-blog">
+    <div class="slider-content">
+        <div class="header-wrapper">
+          <div class="header">
+            <div class="menu-wrapper">
+              <div class="menu-hamburger" (click)="menuToggle()"></div>
+              <a href="/"><div class="logo">WE BUILD</div></a>
+            </div>
+            <div class="nav-wrapper">
+              <nav>
+                <ul>
+                    <li><a href="/">Home</a></li>
+                    <li><a href="/reham">Reham Profile</a></li>
+                    <li><a href="/ismael">Ismael Profile</a></li>
+                    <li><a href="/blog" class="active">Blog</a></li>
+                </ul>
+              </nav>
+            </div>
+          </div>
+        </div>
+      <div class="slider-wrapper">
+        <div class="slider-container blog-detail-page"> 
+         <div class="lines-wrapper">
+           <div class="croses">
+             <span>+</span>
+             <span>+</span>
+             <span>+</span>
+             <span>+</span>
+           </div>
+           <span class="vertical"></span>
+           <span class="horizontal"></span>
+           <span class="horizontal"></span>
+           <span class="horizontal"></span>
+           <span class="horizontal"></span>
+          </div>
+          <div class="image-mask">
+            <img class="" src="" alt="" />
+          </div>
+         <div class="slide active green blog-detail" data-order="1" data-color="#f96666" data-img="">
+            <div class="fake-bg green"></div>
+            <canvas class="canvas" data-image=""></canvas>
+            <div class="slide-content ">
+              <div class="title-background">
+                  <span class="mask-wrap">
+                    <span class="mask">We Build</span>
+                  </span>
+                  <span class="mask-wrap">
+                    <span class="mask">Blog</span>
+                  </span>
+              </div>
+              <div class="title-wrapper">
+                <h1>
+                   <span class="mask-wrap">
+                    <span class="mask">{{post.data?.title}}</span>
+                  </span>
+                   <span class="mask-wrap content-paragraph"> <span class="mask"><div class="more-info">In <span class="diff-color">{{ post.data?.categories[0]?.name }}</span> By <span class="diff-color">{{ post.data?.author?.first_name }}</span> {{post.data?.published | date: 'dd/MM/yyyy' }}</div></span></span>
+                </h1>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="post container mb-5">
+      <div class="row">
+          <div class="col-md-12">
+              <div class="post-body" [innerHTML]="post.data?.body"></div>
+          </div>
+        </div>
+      </div>
+      </div>
+</mat-card>
+

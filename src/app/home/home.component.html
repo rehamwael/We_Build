@@ -1,0 +1,239 @@
+<mat-card class="p-0">
+    <svg height="0" width="0">
+      <symbol id="twitter" viewBox="0 0 700 700">
+          <path d="M679 239s-21 34-55 57c7 156-107 329-314 329-103 0-169-50-169-50s81 17 163-45c-83-5-103-77-103-77s23 6 50-2c-93-23-89-110-89-110s23 14 50 14c-84-65-34-148-34-148s76 107 228 116c-22-121 117-177 188-101 37-6 71-27 71-27s-12 41-49 61c30-2 63-17 63-17z"/>
+       </symbol>
+       <symbol id="instagram">
+        <path d="M16.3189 0H6.68114C2.99714 0 0 2.86683 0 6.39066V15.6093C0 19.1332 2.99714 22 6.68114 22H16.3189C20.0029 22 23 19.1332 23 15.6094V6.39066C23 2.86683 20.0029 0 16.3189 0ZM21.2031 15.6093C21.2031 18.1854 19.0121 20.2812 16.3189 20.2812H6.68114C3.98794 20.2812 1.79688 18.1854 1.79688 15.6094V6.39066C1.79688 3.81455 3.98794 1.71875 6.68114 1.71875H16.3189C19.0121 1.71875 21.2031 3.81455 21.2031 6.39066V15.6093Z" fill="white"/>
+        <path d="M11.5 5.07031C8.08171 5.07031 5.30078 7.73034 5.30078 11C5.30078 14.2697 8.08171 16.9297 11.5 16.9297C14.9183 16.9297 17.6992 14.2697 17.6992 11C17.6992 7.73034 14.9183 5.07031 11.5 5.07031ZM11.5 15.2109C9.07256 15.2109 7.09766 13.3219 7.09766 11C7.09766 8.6781 9.07256 6.78906 11.5 6.78906C13.9274 6.78906 15.9023 8.6781 15.9023 11C15.9023 13.3219 13.9274 15.2109 11.5 15.2109Z" fill="white"/>
+        <path d="M17.7891 5.84375C18.2853 5.84375 18.6875 5.45899 18.6875 4.98438C18.6875 4.50976 18.2853 4.125 17.7891 4.125C17.2929 4.125 16.8906 4.50976 16.8906 4.98438C16.8906 5.45899 17.2929 5.84375 17.7891 5.84375Z" fill="white"/>
+        </symbol>
+    </svg>
+    <div class="slider-content">
+        <div class="header-wrapper">
+          <div class="header">
+            <div class="menu-wrapper">
+              <div class="menu-hamburger" (click)="menuToggle()"></div>
+              <div class="logo">WE BUILD</div>
+            </div>
+            <div class="nav-wrapper">
+              <nav>
+                <ul>
+                    <li><a href="/" class="active">Home</a></li>
+                    <li><a href="/reham">Reham Profile</a></li>
+                    <li><a href="/ismael">Ismael Profile</a></li>
+                    <li><a href="/blog">Blog</a></li>
+                </ul>
+              </nav>
+            </div>
+          </div>
+        </div>
+      <div class="slider-wrapper">
+        <div class="slider-container"> 
+          <div class="control-nav">
+            <ul>
+              <li class="active"><span class="line"></span><span class="number">1</span></li>
+              <li><span class="line"></span><span class="number">2</span></li>
+              <li><span class="line"></span><span class="number">3</span></li>
+              <li><span class="line"></span><span class="number">4</span></li>
+            </ul>
+          </div>
+         <div class="lines-wrapper">
+           <div class="croses">
+             <span>+</span>
+             <span>+</span>
+             <span>+</span>
+             <span>+</span>
+           </div>
+           <span class="vertical"></span>
+           <span class="horizontal"></span>
+           <span class="horizontal"></span>
+           <span class="horizontal"></span>
+           <span class="horizontal"></span>
+          </div>
+          <div class="image-mask">
+            <img class="" src="" alt="" />
+          </div>
+          <div class="slide active red" data-order="1" data-color="#000" data-img="">
+            <div class="fake-bg red"></div>
+            <canvas class="canvas" data-image="../assets/sales-company.jpg"></canvas>
+            <div class="slide-content ">
+               <div class="image-caption">
+                 <span class="line"></span>
+                 <span>Think Big Start Small !</span>
+                </div>
+              <div class="title-background">
+                <span class="mask-wrap">
+                    <span class="mask">We Build .Com</span>
+                  </span>
+                  <span class="mask-wrap">
+                    <span class="mask">Blog</span>
+                  </span>
+              </div>
+              <div class="title-wrapper">
+                <h1>
+                  <span class="mask-wrap">
+                    <span class="mask">We Build </span>
+                  </span>
+                  <span class="mask-wrap">
+                    <span class="mask">Blog</span>
+                  </span>
+                  <span class="mask-wrap content-paragraph"> <span class="mask">{{ page?.description_ }}</span></span>
+                </h1>
+              </div>
+            </div>
+          </div>
+         <div class="slide blue" data-order="2" data-color="#EE4654" data-img="">
+            <div class="fake-bg blue"></div>
+            <canvas class="canvas" data-image=""></canvas>
+            <div class="slide-content ">
+              <div class="image-caption">
+                 <span class="line"></span>
+                  <span>Project Management</span>
+                </div>
+              <div class="title-background">
+                  <span class="mask-wrap">
+                    <span class="mask">Ismael</span>
+                  </span>
+                  <span class="mask-wrap">
+                    <span class="mask">Al-Akhras</span>
+                  </span>
+              </div>
+              <div class="title-wrapper">
+                <h1>
+                   <span class="mask-wrap">
+                    <span class="mask">Ismael</span>
+                  </span>
+                  <span class="mask-wrap">
+                    <span class="mask">Al-Akhras</span>
+                  </span>
+                   <span class="mask-wrap content-paragraph"> <span class="mask">{{ page?.ismael_description_home }}</span></span>
+                </h1>
+              </div>
+            </div>
+          </div>
+         <div class="slide green" data-order="3" data-color="#f96666" data-img="">
+            <div class="fake-bg green"></div>
+            <canvas class="canvas" data-image=""></canvas>
+            <div class="slide-content ">
+              <div class="image-caption">
+                 <span class="line"></span>
+                  <span>Front-End Develpment</span>
+                </div>
+              <div class="title-background">
+                  <span class="mask-wrap">
+                    <span class="mask">Reham</span>
+                  </span>
+                  <span class="mask-wrap">
+                    <span class="mask">Habbas</span>
+                  </span>
+              </div>
+              <div class="title-wrapper">
+                <h1>
+                   <span class="mask-wrap">
+                    <span class="mask">Reham</span>
+                  </span>
+                  <span class="mask-wrap">
+                    <span class="mask">Habbas</span>
+                  </span>
+                   <span class="mask-wrap content-paragraph"> <span class="mask">{{ page?.reham_description_home }}</span></span>
+                </h1>
+              </div>
+            </div>
+          </div>
+          <div class="slide grey" data-order="4" data-color="#bcbcbc" data-img="https://s3-us-west-2.amazonaws.com/s.cdpn.io/42764/kate-moss-color.png">
+            <div class="fake-bg grey"></div>
+            <canvas class="canvas" data-image=""></canvas>
+            <div class="slide-content">
+            <div class="image-caption">
+                 <span class="line"></span>
+                  <span>Featured Blog Posts</span>
+                </div>
+              <div class="title-background">
+                  <span class="mask-wrap">
+                    <span class="mask">We</span>
+                  </span>
+                  <span class="mask-wrap">
+                    <span class="mask">Blog</span>
+                  </span>
+              </div>
+              <div class="title-wrapper mask4">
+                <h1>
+                   <span class="mask-wrap">
+                    <span class="mask">We Blog</span>
+                  </span>
+                  <span class="mask-wrap content-paragraph"> <span class="mask">{{ page?.weblog_description_home }}</span></span>
+                </h1>
+              </div>
+              <div class="slide-content txt mt-4">
+                <div class="txt-wrapper">
+                  <ul>
+                    <li *ngFor="let post of posts; let i=index">
+                    <a [routerLink]="['/blog/'+post.slug]" *ngIf="i < 4">
+                      <div class="date-wrapper">
+                        <div class="date">{{post.published | date: 'dd' }}</div>
+                        <div class="month">{{post.published | date: 'MMMM' }}</div>
+                      </div>
+                      <div class="post-wrapper">
+                        <div class="post-title">{{post.title}}</div>
+                        <div class="post-info">
+                          <ul>
+                            <li>By - {{ post.author?.first_name }} /</li>
+                            <li>{{ post.categories[0]?.name }}</li>
+                          </ul>
+                        </div>
+                      </div>
+                      </a>
+                    </li>
+                  </ul>
+                  <span class="view-all"><a href="/blog">View all articles ></a></span> 
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+        <div class="social-icons">
+          <ul>
+            <li><a href="{{page?.twitter_link}}" target="_blank" class="inside">
+               <svg id="twitter-icon">
+                <use xlink:href="#twitter"></use>
+              </svg>
+              </a></li>
+            <li><a href="{{page?.instagram_link}}" target="_blank">
+                  <svg id="instagram-icon">
+                <use xlink:href="#instagram"></use>
+              </svg>
+              </a></li>
+          </ul>
+      </div>
+        <div class="footer-wrapper">
+          <ul>
+            <li class="active box" data-id="1">
+              <div class="hover-box"></div>
+              <div class="box-content">
+                <span>WE BUILD</span><span></span>
+              </div>
+            </li>
+            <li class="box" data-id="2">
+               <div class="hover-box"></div>
+              <div class="box-content">
+                <span>Ismael</span><span></span>
+              </div>
+            </li>
+            <li class="box" data-id="3" >
+              <div class="hover-box"></div>
+              <div class="box-content">
+              <span>Reham</span><span></span>
+              </div>
+            </li>
+            <li class="box" data-id="4"  >
+              <div class="hover-box"></div>
+              <div class="box-content">
+              <span>We Blog</span><span></span>
+              </div>
+             </li>
+          </ul>
+        </div>
+    </div>
+    </mat-card>
