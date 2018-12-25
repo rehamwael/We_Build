@@ -1163,6 +1163,10 @@ a , a:hover{
    .header-wrapper .menu-hamburger{
      opacity: 1;
    }
+   .header-wrapper .menu-wrapper{
+      height: 6rem;
+      padding: 1em 0;
+   }
    .inner .header-wrapper .menu-wrapper {
     top: -9px;
    }
@@ -1234,7 +1238,6 @@ a , a:hover{
     width: 100%;
     padding: 1.5em 0;
     font-size: 3.9rem;
-    text-align: center;
    }
    .slider-content .title-wrapper{
      margin-top: 45%;
