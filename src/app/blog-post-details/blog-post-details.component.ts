@@ -11,10 +11,11 @@ import {map, take} from 'rxjs/operators';
     encapsulation: ViewEncapsulation.None
 })
 export class BlogPostDetailsComponent implements OnInit {
+    
 
     constructor(protected route: ActivatedRoute) {
     }
-
+    public MOBILE_MAX_WIDTH = 425;  //Adjust as needed
     protected slug$: Observable<string>;
     public post = {
         meta: null,
@@ -44,7 +45,14 @@ export class BlogPostDetailsComponent implements OnInit {
         var c=document.getElementsByTagName('script');
         var shareIcons = document.getElementById("at4-share");
         document.getElementsByTagName('head')[0].removeChild(c[0]);
-        shareIcons.style.display = "none";
+        if(shareIcons != null){
+            shareIcons.style.display = "none";
+        }
+        if( window.innerWidth < 425){
+            var shareIconsMobile = document.getElementById("at-share-dock");
+            shareIconsMobile.style.display = "none";
+
+        }
     }
 
 
@@ -61,7 +69,14 @@ export class BlogPostDetailsComponent implements OnInit {
           document.getElementsByTagName('head')[0].appendChild(node);
         }
         var shareIcons = document.getElementById("at4-share");
-        shareIcons.style.display = "block";
+        if(shareIcons != null){
+         shareIcons.style.display = "block";
+        }
+        if( window.innerWidth < 425){
+            var shareIconsMobile = document.getElementById("at-share-dock");
+            shareIconsMobile.style.display = "block";
+
+        }
       }
       menuToggle(){
         let header = document.querySelector(".header-wrapper");
