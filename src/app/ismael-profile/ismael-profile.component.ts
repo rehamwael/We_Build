@@ -10,6 +10,7 @@ export class IsmaelProfile implements OnInit {
     public posts: any[];
     public autorName: string;
     public projects: any[];
+    today: number = Date.now();
     constructor() {
     }
 

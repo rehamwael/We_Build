@@ -8,6 +8,7 @@ import {butterService} from '../services';
 })
 export class BlogPostListingComponent implements OnInit {
     public posts: any[];
+    today: number = Date.now();
 
     constructor() {
     }

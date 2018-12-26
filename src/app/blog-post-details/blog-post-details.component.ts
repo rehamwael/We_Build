@@ -40,6 +40,13 @@ export class BlogPostDetailsComponent implements OnInit {
                 });
             });
     }
+    ngOnDestroy(): void {
+        var c=document.getElementsByTagName('script');
+        var shareIcons = document.getElementById("at4-share");
+        document.getElementsByTagName('head')[0].removeChild(c[0]);
+        shareIcons.style.display = "none";
+    }
+
 
     loadScripts() {
         const dynamicScripts = [
@@ -53,6 +60,8 @@ export class BlogPostDetailsComponent implements OnInit {
           node.charset = 'utf-8';
           document.getElementsByTagName('head')[0].appendChild(node);
         }
+        var shareIcons = document.getElementById("at4-share");
+        shareIcons.style.display = "block";
       }
       menuToggle(){
         let header = document.querySelector(".header-wrapper");

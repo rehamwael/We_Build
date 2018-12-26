@@ -988,6 +988,14 @@ a , a:hover{
   -moz-animation-duration: 1.3s;
   -o-animation-duration: 1.3s;
 }
+footer {
+  background-color: #eee;
+  color: #000;
+  font-size: 1.5rem;
+}
+.blog-posts {
+  margin-bottom: 6%;
+}
 .animated-delay{
   animation-delay: .15s;
   -webkit-animation-delay: .15s;
@@ -1067,6 +1075,7 @@ a , a:hover{
     height: 30vh;
   }
 }
+
 @media (min-width: 700px) and (max-width: 1024px) {
   .slider-content .fake-bg.red ,.slider-content .fake-bg.blue ,.slider-content .fake-bg.green {
     background-size: inherit;
@@ -1118,6 +1127,7 @@ a , a:hover{
     height: 18vh;
   }
 }
+
 .inner .header-wrapper .nav-wrapper{
   top: 12px;
 }

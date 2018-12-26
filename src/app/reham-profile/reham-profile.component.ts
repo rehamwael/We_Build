@@ -13,7 +13,7 @@ export class RehamProfile implements OnInit {
     public projects: any[];
     constructor() {
     }
-
+    today: number = Date.now();
     ngOnInit() {
         butterService.page.retrieve('*', 'reham-profile')
         .then((res) => {
