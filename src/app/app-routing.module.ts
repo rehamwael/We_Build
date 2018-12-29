@@ -9,7 +9,7 @@ import {CustomerDetailsComponent} from './customer-details/customer-details.comp
 import {BlogPostDetailsComponent} from './blog-post-details/blog-post-details.component';
 import { RehamProfile } from './reham-profile/reham-profile.component';
 import { IsmaelProfile } from './ismael-profile/ismael-profile.component';
-import { CommonModule } from '@angular/common';
+
 const appRoutes: Routes = [
     {path: 'customer', component: CustomerListingComponent},
     {path: 'customer/:slug', component: CustomerDetailsComponent},
@@ -22,8 +22,9 @@ const appRoutes: Routes = [
     {path: 'home', component: HomeComponent},
     {path: '**', redirectTo: 'home'}
 ];
+
 @NgModule({
-    imports: [CommonModule,RouterModule.forRoot(appRoutes,{useHash:true})],
+    imports: [RouterModule.forRoot(appRoutes)],
     exports: [RouterModule]
 })
 export class AppRoutingModule {

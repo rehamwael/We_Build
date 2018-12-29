@@ -1077,6 +1077,12 @@ footer {
   .project-bg{
     height: 30vh;
   }
+  body .inner .header-wrapper .nav-wrapper , body .header-wrapper .nav-wrapper {
+    top: 23px;
+  }
+  body .inner .header-wrapper .menu-wrapper , body .header-wrapper .menu-wrapper {
+    top: 10px;
+  }
 }
 
 @media (min-width: 700px) and (max-width: 1024px) {

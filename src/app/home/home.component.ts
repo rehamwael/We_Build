@@ -1,5 +1,7 @@
 import {Component, OnInit} from '@angular/core';
 import {butterService} from '../services';
+import 'src/app/home/script.js';
+
 
 @Component({
     selector: 'app-home',
@@ -26,6 +28,7 @@ export class HomeComponent implements OnInit {
     }).then((res) => {
         this.posts = res.data.data;
     });
+
     }
     menuToggle(){
         let header = document.querySelector(".header-wrapper");
