@@ -72,8 +72,8 @@ export class BlogPostDetailsComponent implements OnInit {
         if(shareIcons != null){
          shareIcons.style.display = "block";
         }
-        if( window.innerWidth < 425){
-            var shareIconsMobile = document.getElementById("at-share-dock");
+        var shareIconsMobile = document.getElementById("at-share-dock");
+        if( window.innerWidth < 425 && shareIconsMobile != null){
             shareIconsMobile.style.display = "block";
 
         }
