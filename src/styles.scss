@@ -959,14 +959,18 @@ a , a:hover{
 .slider-container.blog-detail-page,.slide.blog-detail{
   height: 80vh;
 }
-.post p{
+.post ul {
   font-size: 13px;
+}
+.post p{
+  font-size: 14px;
+  line-height: 20px;
 }
 .post h2{
   font-weight: bold;
   margin-bottom: 1em;
 }
-.image img{
+.image img ,.post img{
   width: 100%;
 }
 .inner-blog.inner .header-wrapper .menu-wrapper {
